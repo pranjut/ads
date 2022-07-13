@@ -33,4 +33,10 @@ object Dependencies {
 
   val slick_deps = Seq(slick, slickCodeGen, postgresql, h2, hikariCP, caffine)
 
+  val logback = "ch.qos.logback" % "logback-classic" % "1.2.11" % Test
+  val scalaLogging = "com.typesafe.scala-logging" %% "scala-logging" % "3.9.5"
+
+
+  val common_deps = Seq(logback, scalaLogging)
+
 }

@@ -1,6 +1,8 @@
 package com.pranjut.modules
 
-trait BaseModule {
+import com.typesafe.scalalogging.LazyLogging
+
+trait BaseModule extends LazyLogging{
 
   val coreModule: CoreModules
 

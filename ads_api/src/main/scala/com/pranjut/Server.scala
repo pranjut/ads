@@ -28,10 +28,9 @@ object Server extends App with AdsRoutes {
   serverBinding
     .onComplete {
       case Success(bound) =>
-        println(s"Server online at http://${bound.localAddress.getHostString}:${bound.localAddress.getPort}/")
+        logger.info(s"Server online at http://${bound.localAddress.getHostString}:${bound.localAddress.getPort}/")
       case Failure(e) =>
-        Console.err.println(s"Server could not start!")
-        e.printStackTrace()
+        logger.error("Server could not be started", e)
         system.terminate()
     }
 
