@@ -6,6 +6,6 @@ lazy val ads_api = (project in file("ads_api")).
   settings(libraryDependencies ++= akka_http_deps ++ slick_deps ++ Seq(typesafeConfig, scala_test, mockito_sugar) ++ akka_stream_deps)
 
 
-lazy val root = (project in file(".")).aggregate(ads_api)
+lazy val ads = (project in file(".")).aggregate(ads_api)
 
 Test / parallelExecution := false
