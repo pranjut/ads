@@ -14,7 +14,7 @@ vii.  Logging </br>
 `sbt clean compile test`
 
 ## How to run
-`sbt run`
+`sbt run` </br>
 This will run the server and look for actual postgres database, so make sure to have the postgres database setup already.
 Otherwise if you want to run the api with h2 db, go to TestServer through the intellij and run the server.
 
