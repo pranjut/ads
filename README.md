@@ -1,4 +1,4 @@
-# Base APi
+# Base API
 This is a sample akka-http api project. One can take reference from this project to create an application which requires to involve the following features.
 `
 i.    Akka-http endpoints
