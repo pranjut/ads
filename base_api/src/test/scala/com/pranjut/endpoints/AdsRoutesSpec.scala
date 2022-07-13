@@ -2,13 +2,13 @@ package com.pranjut.endpoints
 
 import akka.http.scaladsl.marshalling.Marshal
 import akka.http.scaladsl.model._
-import com.pranjut.db.models.{Ad, MessageResponse}
+import com.pranjut.db.models.{ Ad, MessageResponse }
 import com.pranjut.db.repositories.InMemObjs.convertScalaFuture
 import com.pranjut.services.AdService
 
 import scala.concurrent.Future
 
-class AdsRoutesSpec extends BaseEndpointsSpec{
+class AdsRoutesSpec extends BaseEndpointsSpec {
 
   import spray.json._
 
